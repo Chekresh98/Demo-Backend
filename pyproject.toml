@@ -14,4 +14,4 @@ dev = "uvicorn main:app --reload --reload-exclude=.venv,*.log"
 precmt = "pre-commit run --all-files"
 
 [tool.uv.sources]
-localagent = { git = "https://github.com/pritam-dey3/LocalAgent.git" }
+localagent = { git = "https://github.com/pritam-dey3/LocalAgent.git", rev = "7be808153f00bbe81fdaf5400a374782540e94f0" }
