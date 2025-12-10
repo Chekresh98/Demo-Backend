@@ -6,7 +6,12 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi>=0.117.1",
+    "localagent",
 ]
 
 [tool.poe.tasks]
 dev = "uvicorn main:app --reload --reload-exclude=.venv,*.log"
+precmt = "pre-commit run --all-files"
+
+[tool.uv.sources]
+localagent = { git = "https://github.com/pritam-dey3/LocalAgent.git" }
